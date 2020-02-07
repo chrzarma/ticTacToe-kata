@@ -10,8 +10,18 @@ import XCTest
 @testable import TicTacToe
 
 class TicTacToeTests: XCTestCase {
-    func test_ticTacToeGameHas3X3Field() {
-        let game = TicTacToeGame()
+    func test_gameHas3X3FieldBoard() {
+        let game = Game()
         XCTAssertEqual(game.board.count, 9)
+    }
+    
+    func test_whenNoPlayerWinsAndBoardIsNotFull_scoreReturnsKeepPlaying() {
+        let game = Game()
+        
+        game.playerO.playerWins = false
+        game.playerX.playerWins = false
+        
+        let result = game.score()
+        XCTAssertEqual(result, .keepPlaying)
     }
 }

@@ -1,5 +1,5 @@
 //
-//  TicTacToeField.swift
+//  Field.swift
 //  TicTacToe
 //
 //  Created by Christian Zarmakoupis on 07/02/2020.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum TicTacToeField {
+enum Field {
     case empty
     case o
     case x

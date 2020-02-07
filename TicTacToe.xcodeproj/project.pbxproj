@@ -10,8 +10,9 @@
 		EF7E2A3723EDACB300C17FBA /* TicTacToe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7E2A2D23EDACB300C17FBA /* TicTacToe.framework */; };
 		EF7E2A3C23EDACB300C17FBA /* TicTacToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7E2A3B23EDACB300C17FBA /* TicTacToeTests.swift */; };
 		EF7E2A3E23EDACB300C17FBA /* TicTacToe.h in Headers */ = {isa = PBXBuildFile; fileRef = EF7E2A3023EDACB300C17FBA /* TicTacToe.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EF7E2A4823EDBD2C00C17FBA /* TicTacToeField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7E2A4723EDBD2C00C17FBA /* TicTacToeField.swift */; };
-		EF7E2A4A23EDBD4E00C17FBA /* TicTacToeGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7E2A4923EDBD4E00C17FBA /* TicTacToeGame.swift */; };
+		EF7E2A4823EDBD2C00C17FBA /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7E2A4723EDBD2C00C17FBA /* Field.swift */; };
+		EF7E2A4A23EDBD4E00C17FBA /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7E2A4923EDBD4E00C17FBA /* Game.swift */; };
+		EF7E2A5023EDEFC600C17FBA /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7E2A4F23EDEFC600C17FBA /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +32,9 @@
 		EF7E2A3623EDACB300C17FBA /* TicTacToeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicTacToeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF7E2A3B23EDACB300C17FBA /* TicTacToeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeTests.swift; sourceTree = "<group>"; };
 		EF7E2A3D23EDACB300C17FBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EF7E2A4723EDBD2C00C17FBA /* TicTacToeField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeField.swift; sourceTree = "<group>"; };
-		EF7E2A4923EDBD4E00C17FBA /* TicTacToeGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeGame.swift; sourceTree = "<group>"; };
+		EF7E2A4723EDBD2C00C17FBA /* Field.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
+		EF7E2A4923EDBD4E00C17FBA /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		EF7E2A4F23EDEFC600C17FBA /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +79,9 @@
 			children = (
 				EF7E2A3023EDACB300C17FBA /* TicTacToe.h */,
 				EF7E2A3123EDACB300C17FBA /* Info.plist */,
-				EF7E2A4723EDBD2C00C17FBA /* TicTacToeField.swift */,
-				EF7E2A4923EDBD4E00C17FBA /* TicTacToeGame.swift */,
+				EF7E2A4723EDBD2C00C17FBA /* Field.swift */,
+				EF7E2A4F23EDEFC600C17FBA /* Player.swift */,
+				EF7E2A4923EDBD4E00C17FBA /* Game.swift */,
 			);
 			path = TicTacToe;
 			sourceTree = "<group>";
@@ -202,8 +205,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF7E2A4A23EDBD4E00C17FBA /* TicTacToeGame.swift in Sources */,
-				EF7E2A4823EDBD2C00C17FBA /* TicTacToeField.swift in Sources */,
+				EF7E2A4A23EDBD4E00C17FBA /* Game.swift in Sources */,
+				EF7E2A5023EDEFC600C17FBA /* Player.swift in Sources */,
+				EF7E2A4823EDBD2C00C17FBA /* Field.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
