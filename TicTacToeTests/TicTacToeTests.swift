@@ -18,8 +18,10 @@ class TicTacToeTests: XCTestCase {
     func test_whenNoPlayerWinsAndBoardIsNotFull_scoreReturnsKeepPlaying() {
         let game = Game()
         
-        game.playerO.playerWins = false
-        game.playerX.playerWins = false
+        game.board = [.x, .o, .x,
+                      .x, .x, .o,
+                      .o, .x, .empty
+                    ]
         
         let result = game.score()
         XCTAssertEqual(result, .keepPlaying)
@@ -32,10 +34,18 @@ class TicTacToeTests: XCTestCase {
                       .o, .x, .o
                     ]
         
-        game.playerO.playerWins = false
-        game.playerX.playerWins = false
-        
         let result = game.score()
         XCTAssertEqual(result, .draw)
+    }
+ 
+    func test_whenPlayerXHasThreeInARow_scoreReturnsWinnerX() {
+        let game = Game()
+        game.board = [.x, .o, .o,
+                      .x, .x, .o,
+                      .o, .x, .x
+                ]
+        
+        let result = game.score()
+        XCTAssertEqual(result, .winnerX)
     }
 }

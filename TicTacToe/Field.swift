@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Field {
+enum Field: Equatable {
     case empty
     case o
     case x
