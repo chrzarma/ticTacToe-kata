@@ -11,10 +11,7 @@ import XCTest
 
 class TicTacToeTests: XCTestCase {
     func test_ticTacToeGameHas3X3Field() {
-        //given
-        
-        //when
-        
-        //then
+        let game = TicTacToeGame()
+        XCTAssertEqual(game.board.count, 9)
     }
 }

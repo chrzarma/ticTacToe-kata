@@ -10,6 +10,8 @@
 		EF7E2A3723EDACB300C17FBA /* TicTacToe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7E2A2D23EDACB300C17FBA /* TicTacToe.framework */; };
 		EF7E2A3C23EDACB300C17FBA /* TicTacToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7E2A3B23EDACB300C17FBA /* TicTacToeTests.swift */; };
 		EF7E2A3E23EDACB300C17FBA /* TicTacToe.h in Headers */ = {isa = PBXBuildFile; fileRef = EF7E2A3023EDACB300C17FBA /* TicTacToe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF7E2A4823EDBD2C00C17FBA /* TicTacToeField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7E2A4723EDBD2C00C17FBA /* TicTacToeField.swift */; };
+		EF7E2A4A23EDBD4E00C17FBA /* TicTacToeGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7E2A4923EDBD4E00C17FBA /* TicTacToeGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		EF7E2A3623EDACB300C17FBA /* TicTacToeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicTacToeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF7E2A3B23EDACB300C17FBA /* TicTacToeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeTests.swift; sourceTree = "<group>"; };
 		EF7E2A3D23EDACB300C17FBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF7E2A4723EDBD2C00C17FBA /* TicTacToeField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeField.swift; sourceTree = "<group>"; };
+		EF7E2A4923EDBD4E00C17FBA /* TicTacToeGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 			children = (
 				EF7E2A3023EDACB300C17FBA /* TicTacToe.h */,
 				EF7E2A3123EDACB300C17FBA /* Info.plist */,
+				EF7E2A4723EDBD2C00C17FBA /* TicTacToeField.swift */,
+				EF7E2A4923EDBD4E00C17FBA /* TicTacToeGame.swift */,
 			);
 			path = TicTacToe;
 			sourceTree = "<group>";
@@ -148,6 +154,7 @@
 				TargetAttributes = {
 					EF7E2A2C23EDACB300C17FBA = {
 						CreatedOnToolsVersion = 11.2;
+						LastSwiftMigration = 1120;
 					};
 					EF7E2A3523EDACB300C17FBA = {
 						CreatedOnToolsVersion = 11.2;
@@ -195,6 +202,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF7E2A4A23EDBD4E00C17FBA /* TicTacToeGame.swift in Sources */,
+				EF7E2A4823EDBD2C00C17FBA /* TicTacToeField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +348,7 @@
 		EF7E2A4223EDACB300C17FBA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -356,6 +366,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.czarmakoupis.TicTacToe;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -363,6 +374,7 @@
 		EF7E2A4323EDACB300C17FBA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -387,6 +399,7 @@
 		EF7E2A4523EDACB300C17FBA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = B3H447U8PU;
@@ -405,6 +418,7 @@
 		EF7E2A4623EDACB300C17FBA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = B3H447U8PU;
