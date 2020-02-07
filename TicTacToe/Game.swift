@@ -29,7 +29,6 @@ class Game {
         case winnerX
         case winnerO
         case draw
-        case error
     }
     
     func score() -> Result {
@@ -44,7 +43,7 @@ class Game {
         } else if playerO.playerWins == false && playerX.playerWins == true {
             return .winnerX
         }
-        return .error
+        return .winnerO
     }
     
     private func checkPlayerXStatus() -> Bool {

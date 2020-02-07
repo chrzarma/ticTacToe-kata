@@ -48,4 +48,15 @@ class TicTacToeTests: XCTestCase {
         let result = game.score()
         XCTAssertEqual(result, .winnerX)
     }
+    
+    func test_whenPlayerOHasThreeInARow_scoreReturnsWinnerO() {
+        let game = Game()
+        game.board = [.o, .x, .x,
+                     .o, .o, .x,
+                     .x, .o, .o
+               ]
+       
+       let result = game.score()
+       XCTAssertEqual(result, .winnerO)
+    }
 }
