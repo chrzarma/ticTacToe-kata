@@ -51,9 +51,9 @@ class TicTacToeTests: XCTestCase {
     
     func test_whenPlayerOHasThreeInARow_scoreReturnsWinnerO() {
         let game = Game()
-        game.board = [.o, .x, .x,
+        game.board = [.o, .x, .empty,
                      .o, .o, .x,
-                     .x, .o, .o
+                     .x, .empty, .o
                ]
        
        let result = game.score()
