@@ -29,14 +29,17 @@ class Game {
         case winnerX
         case winnerO
         case draw
+        case error
     }
     
     func score() -> Result {
-        if board.contains(.empty) {
-            if playerO.playerWins == false && playerX.playerWins == false {
+        if playerO.playerWins == false && playerX.playerWins == false {
+            if board.contains(.empty) {
                 return .keepPlaying
+            } else {
+                return .draw
             }
         }
-        return .draw
+        return .error
     }
 }

@@ -24,4 +24,18 @@ class TicTacToeTests: XCTestCase {
         let result = game.score()
         XCTAssertEqual(result, .keepPlaying)
     }
+    
+    func test_whenNoPlayerWinsAndBoardIsFull_scoreReturnsDraw() {
+        let game = Game()
+        game.board = [.x, .o, .x,
+                      .x, .x, .o,
+                      .o, .x, .o
+                    ]
+        
+        game.playerO.playerWins = false
+        game.playerX.playerWins = false
+        
+        let result = game.score()
+        XCTAssertEqual(result, .draw)
+    }
 }
